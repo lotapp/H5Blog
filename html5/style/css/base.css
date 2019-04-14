@@ -465,12 +465,12 @@ main {
 }
 
 /* ======标签云====== */
-.cloud p {
+.cloud div {
   /* 父类加了这个，子类就可以跳出（显示效果好点） */
   transform-style: preserve-3d;
 }
 
-.cloud p a {
+.cloud div a {
   /* float: left; */
   display: inline-block;
   /* height: 24px; */
@@ -487,7 +487,7 @@ main {
 }
 
 /* 特效 */
-.cloud p a:hover {
+.cloud div a:hover {
   border-radius: 0;
   /* 让字显示的更清晰 */
   text-shadow: #000 1px 1px 1px;
@@ -496,45 +496,45 @@ main {
 }
 
 /* 颜色循环系列 */
-.cloud p a:nth-child(8n-7) {
+.cloud div a:nth-child(8n-7) {
   background: #8A9B0F;
 }
 
-.cloud p a:nth-child(8n-6) {
+.cloud div a:nth-child(8n-6) {
   background: #FE4365;
 }
 
-.cloud p a:nth-child(8n-5) {
+.cloud div a:nth-child(8n-5) {
   background: #f16b17;
 }
 
-.cloud p a:nth-child(8n-4) {
+.cloud div a:nth-child(8n-4) {
   background: #2AB8AD;
 }
 
-.cloud p a:nth-child(8n-3) {
+.cloud div a:nth-child(8n-3) {
   background: #FC9D9A;
 }
 
-.cloud p a:nth-child(8n-2) {
+.cloud div a:nth-child(8n-2) {
   background: #E2C52E;
 }
 
-.cloud p a:nth-child(8n-1) {
+.cloud div a:nth-child(8n-1) {
   background: #83AF9B;
 }
 
-.cloud p a:nth-child(8n) {
+.cloud div a:nth-child(8n) {
   background: #036564;
 }
 
 /* 第一个特殊色 */
-.cloud p a:first-child {
+.cloud div a:first-child {
   background: #000000ba;
 }
 
 /* 最后一个特殊色 */
-.cloud p a:last-child {
+.cloud div a:last-child {
   background: #3299BB;
 }
 
