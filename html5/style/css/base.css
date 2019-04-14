@@ -605,9 +605,6 @@ main {
     float: none;
   }
 
-  /* 图标左边显示 */
-  .navbox .logo {}
-
   /* 显示菜单栏 */
   .navbox h2 .icon-caidan {
     display: block;
@@ -617,6 +614,7 @@ main {
 
   /* 点菜单图标后再显示 */
   .navbox #nav {
+    text-align: center;
     display: none;
   }
 
