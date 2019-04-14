@@ -556,7 +556,7 @@ main {
 /* ======友情链接====== */
 .links li {
   float: left;
-  width: 30%;
+  width: 32%;
   line-height: 30px;
   text-align: center;
 }
@@ -581,20 +581,20 @@ main {
   overflow: hidden;
 }
 
+/* 置顶用红色字 */
+.blogtitle b {
+  color: #F00
+}
+
 /* 给a加个过渡动画 */
 .blogtitle a {
   transition: all 500ms ease;
 }
 
 /* 右移效果 */
-.bloglist li:hover .blogtitle a {
+.blogtitle a:hover {
   color: #337ab7;
   padding-left: 1em;
-}
-
-/* 置顶用红色字 */
-.blogtitle b {
-  color: #F00
 }
 
 /* 展图左浮动样式 */
@@ -630,20 +630,74 @@ main {
 .blogtext {
   color: #666;
   margin-top: 20px;
-
+  line-height: 30px;
 }
 
+/* 作者、时间、分类、阅读更多 */
+.bloginfo {
+  margin-top: 20px;
+  overflow: hidden;
+  color: #999;
+  line-height: 30px;
+}
 
+/* 作者+时间+分类 */
+.bloginfo div:first-child {
+  float: left;
+}
 
-a.viewmore {
+/* 阅读更多 */
+.bloginfo div:last-child {
+  float: right;
+}
+
+/* 作者头像 */
+.bloginfo i {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  padding: 2px;
   display: block;
-  right: 10px;
-  bottom: 20px;
+  position: relative;
+  /* 边框 */
+  background: linear-gradient(to top right, rgba(0, 153, 255, .9), rgba(42, 228, 197, .7));
+}
+
+/* 方图变圆图 */
+.bloginfo i img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* 加V标志 */
+.bloginfo i::after {
+  content: '';
+  background: url(../../images/v.png) no-repeat;
+  background-size: 12px;
+  width: 12px;
+  height: 12px;
   position: absolute;
-  padding: 3px 10px;
-  background: #12b7de;
+  right: 0;
+  bottom: 0;
+}
+
+/* 控制下间隙 */
+.bloginfo span {
+  padding: 0 5px;
+}
+
+/* 分类颜色 */
+.bloginfo span a {
+  color: #096;
+}
+
+.bloginfo .viewmore {
+  display: block;
+  padding: 5px 10px;
   color: #fff;
-  border-radius: 3px;
+  background: #12b7de;
+  border-radius: 5px;
 }
 
 
