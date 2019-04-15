@@ -866,4 +866,9 @@ footer.clearfix {
   .navbox #nav li {
     display: block;
   }
+
+  /* 分页列表不显示总数 */
+  .pagelist a:first-child {
+    display: none;
+  }
 }
