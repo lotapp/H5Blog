@@ -17,10 +17,40 @@
 
 ## 用到的插件
 
-小说明：
+### 小说明：
 1. 插件都是不依赖JQ的，可单独使用的
 2. 把插件从页面剥离也是不影响页面的
     - PS：插件的目的就是为了美化，使用异步加载+CDN（成功就漂亮点，失败也无所谓）
+
+### 粒子背景JS插件
+<https://github.com/lotapp/canvas-nest.js>
+
+使用方式：
+```js
+<script type="text/javascript" color="22,192,255" opacity="1" zIndex="-2" count="99" src="//cdn.staticfile.org/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+```
+
+### 页面滚动插件（不依赖JQ）
+<https://github.com/scrollreveal/scrollreveal>
+
+使用方式：
+```js
+<script src="https://cdn.staticfile.org/scrollReveal.js/4.0.5/scrollreveal.min.js"></script>
+<script>
+window.onload = function () {
+    // 加载成功就进行设置
+    if (window.ScrollReveal) {
+    // 实例化，根据默认配置改即可：https://scrollrevealjs.org/api/defaults.html
+    window.ScrollReveal({
+        origin: "right", // 从右边出现
+        duration: "1500", // 持续时间1.5s
+        reset: true // 循环
+    }).reveal(".bloglist li,#header,#banner,.bg_white");
+    // 经测试，支持CSS选择器
+    }
+}
+</script>
+```
 
 ## 欢迎提交对应版本的动态实现
 
