@@ -17,8 +17,7 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
+a:hover {
   color: #ea5d07;
 }
 
@@ -797,19 +796,41 @@ footer.clearfix {
   color: #eaa607;
 }
 
-.top {
-  width: 40px;
-  height: 40px;
-  display: block;
-  background: url(../images/top.png) no-repeat center #000;
-  right: 20px;
+#tbox {
+  line-height: 50px;
+  right: 50px;
   bottom: 10%;
   position: fixed;
 }
 
+#tbox a.iconfont {
+  font-size: 50px;
+}
+
+/* 设置置顶和到达底部的间隙 */
+#tbox a:first-child {
+  margin: 10px 0;
+}
+
+.top,
+.bottom {
+  width: 50px;
+  height: 50px;
+  display: block;
+  color: white;
+  border-radius: 6px;
+  background-color: black;
+}
+
+.top:hover,
+.bottom:hover {
+  /* 去除其他a样式的影响 */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
 /* ==================响应式布局================== */
-/* 屏幕小于1200px使用如下CSS（非宽屏） */
+/* 屏幕小于等于1200px使用如下CSS（非宽屏） */
 @media screen and (max-width: 1200px) {
   main {
     width: 95%;
@@ -834,7 +855,7 @@ footer.clearfix {
 
 }
 
-/* 屏幕小于1000px */
+/* 屏幕小于等于1000px（iPad） */
 @media screen and (max-width: 1000px) {
 
   /* top部分改造一下 */
@@ -872,3 +893,6 @@ footer.clearfix {
     display: none;
   }
 }
+
+/* 屏幕小于等于767px（iPhone） */
+@media screen and (max-width: 767px) {}
