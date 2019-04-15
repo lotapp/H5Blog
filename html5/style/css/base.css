@@ -711,9 +711,10 @@ main {
   width: 100%;
   color: #666;
   text-align: center;
-  padding-top:27px;
+  padding-top: 27px;
 }
 
+/* index标签样式 */
 .pagelist a {
   display: inline-block;
   color: #666;
@@ -722,25 +723,41 @@ main {
   padding: 5px 10px;
 }
 
+/* 鼠标hover效果和加粗效果 */
 .pagelist a:hover,
-.pagelist>strong {
+.pagelist strong {
   color: #3690cf;
   color: #FFF;
   background: #1C2327;
 }
 
-.pagelist>strong {
+/* 加粗 */
+.pagelist strong {
   padding: 5px 10px;
 }
 
-a.curPage {
-  color: #19585d;
-  font-weight: bold;
+/* ======页面页脚====== */
+#copyright {
+  background: #373D41;
+  width: 100%;
+  border-top: #00C1DE 10px solid;
+  padding: 2em 0 1em 0;
+  color: #73777a;
+  font-size: 15px;
+  text-align: center;
+}
+
+#copyright a {
+  color: #73777a;
+}
+
+#copyright a:hover {
+  color: #00C1DE
 }
 
 /* ==================响应式布局================== */
-/* 屏幕小于1024px使用如下CSS（iPad Pro） */
-@media screen and (max-width: 1024px) {
+/* 屏幕小于1200px使用如下CSS（非宽屏） */
+@media screen and (max-width: 1200px) {
   main {
     width: 95%;
   }
@@ -752,6 +769,7 @@ a.curPage {
   main aside {
     display: none;
   }
+
 }
 
 @media screen and (max-width: 1000px) {
