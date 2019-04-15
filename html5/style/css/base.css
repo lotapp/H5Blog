@@ -231,7 +231,7 @@ body::before {
   font-size: 20px;
   line-height: 40px;
   /* 兼容IE */
-  height: 40px;
+  height: 41px;
 }
 
 .search #keyboard {

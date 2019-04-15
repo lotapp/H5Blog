@@ -44,7 +44,8 @@ window.onload = function () {
         window.ScrollReveal({
             // easing: "ease", // 动画效果
             origin: "right", // 从右边出现
-            duration: "1500", // 持续时间1.5s
+            duration: 1000, // 持续时间1.5s
+            opacity: 0.2, // 最低透明度
             reset: true // 循环
         }).reveal(".bloglist li,#header,#banner,.bg_white");
         // 经测试，支持CSS选择器
