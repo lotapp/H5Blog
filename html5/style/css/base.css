@@ -569,11 +569,10 @@ main {
 /* ======文章列表====== */
 .bloglist li {
   overflow: hidden;
-  padding-top: 10px;
-  border-bottom: #eee 1px dashed;
-  padding-bottom: 10px;
-  position: relative;
   min-height: 120px;
+  padding: 10px 0;
+  border-bottom: #eee 1px dashed;
+  position: relative;
 }
 
 /* 标题长度不用太在意（文章标题再长也不能3行吧?） */
