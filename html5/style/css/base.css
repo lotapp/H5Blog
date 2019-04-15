@@ -22,7 +22,7 @@ a:focus {
   color: #ea5d07;
 }
 
-/* 去除i的默认倾斜样式 */
+/* 去除i|em的默认倾斜样式 */
 i,
 em {
   font-style: normal;
@@ -571,7 +571,7 @@ main {
 .bloglist li {
   overflow: hidden;
   min-height: 120px;
-  padding: 10px 0;
+  padding: 15px;
   border-bottom: #eee 1px dashed;
   position: relative;
 }
@@ -704,6 +704,38 @@ main {
   color: #fff;
   background: #12b7de;
   border-radius: 5px;
+}
+
+/* ======文章底部分页====== */
+.pagelist {
+  width: 100%;
+  color: #666;
+  text-align: center;
+  padding-top:27px;
+}
+
+.pagelist a {
+  display: inline-block;
+  color: #666;
+  background: #F7F7F7;
+  margin: 0 5px 10px;
+  padding: 5px 10px;
+}
+
+.pagelist a:hover,
+.pagelist>strong {
+  color: #3690cf;
+  color: #FFF;
+  background: #1C2327;
+}
+
+.pagelist>strong {
+  padding: 5px 10px;
+}
+
+a.curPage {
+  color: #19585d;
+  font-weight: bold;
 }
 
 /* ==================响应式布局================== */
