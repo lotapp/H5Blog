@@ -575,6 +575,7 @@ main {
   min-height: 120px;
 }
 
+/* 标题长度不用太在意（文章标题再长也不能3行吧?） */
 .blogtitle {
   margin: 0 0 10px 0;
   font-size: 18px;
@@ -631,6 +632,9 @@ main {
   color: #666;
   margin-top: 20px;
   line-height: 30px;
+  /* 兼容IE9 */
+  max-height: 120px;
+  overflow: hidden;
 }
 
 /* 作者、时间、分类、阅读更多 */
