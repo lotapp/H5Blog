@@ -22,9 +22,10 @@ a:focus {
   color: #ea5d07;
 }
 
-/* 去除i|em的默认倾斜样式 */
+/* 去除i|em|address的默认倾斜样式 */
 i,
-em {
+em,
+address {
   font-style: normal;
 }
 
@@ -737,23 +738,75 @@ main {
 }
 
 /* ======页面页脚====== */
-#copyright {
-  background: #373D41;
+footer.clearfix {
   width: 100%;
-  border-top: #00C1DE 10px solid;
-  padding: 2em 0 1em 0;
   color: #73777a;
   font-size: 15px;
+  padding: 30px 0;
+  background: #373D41;
+  border-top: #00C1DE 10px solid;
+  overflow: hidden;
+}
+
+/* 居中显示 */
+.copyright {
+  width: 60%;
+  min-width: 980px;
+  margin: 0 auto;
+}
+
+/* 页脚字体颜色 */
+.copyright a {
+  color: #a7a8a9;
+}
+
+.copyright a:hover {
+  color: #00C1DE;
+}
+
+.copyright ul {
+  float: left;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.copyright ul li {
+  float: left;
+  padding: 0 10px;
   text-align: center;
 }
 
-#copyright a {
-  color: #73777a;
+/* 约束一下二维码 */
+.copyright img {
+  max-height: 100px;
 }
 
-#copyright a:hover {
-  color: #00C1DE
+/* 加粗声明 */
+.copyright strong {
+  font-size: 16px;
+  color: #00c1de;
 }
+
+/* 段落间距 */
+.copyright p {
+  padding-bottom: 5px;
+}
+
+/* 图标颜色 */
+.copyright p i {
+  color: #eaa607;
+}
+
+.top {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url(../images/top.png) no-repeat center #000;
+  right: 20px;
+  bottom: 10%;
+  position: fixed;
+}
+
 
 /* ==================响应式布局================== */
 /* 屏幕小于1200px使用如下CSS（非宽屏） */
@@ -762,16 +815,26 @@ main {
     width: 95%;
   }
 
-  main article {
+  /* 文章宽屏显示 */
+  main article,
+  .copyright {
     width: 100%;
   }
 
+  /* 侧边栏隐藏 */
   main aside {
     display: none;
   }
 
+  /* 页脚宽屏显示 */
+  .copyright {
+    width: 100%;
+    min-width: auto;
+  }
+
 }
 
+/* 屏幕小于1000px */
 @media screen and (max-width: 1000px) {
 
   /* top部分改造一下 */
