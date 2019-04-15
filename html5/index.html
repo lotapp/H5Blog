@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./style/css/index.css">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1135885_8dpumzzjhj6.css">
   <!--[if lt IE 9]>
-        <script type="text/javascript" src="./js/html5shiv.min.js"></script>
+        <script type="text/javascript" src="https://cdn.staticfile.org/modernizr/2.8.3/modernizr.min.js"></script>
     <![endif]-->
 </head>
 
@@ -892,6 +892,7 @@
     document.querySelector("nav ul .icon-sousuo").onclick = function () {
       document.querySelector("header .search").classList.toggle("show");
     }
+
     // 2.显示不同分类的最新内容
     var new_item_doms = document.querySelectorAll(".new_article .new_tabs .new_item");
     var li_doms = document.querySelectorAll(".new_article header li");
@@ -925,7 +926,25 @@
   </script>
   <!-- 粒子背景 -->
   <script type="text/javascript" color="22,192,255" opacity="1" zindex="-2" count="99"
-    src="https://cdn.staticfile.org/canvas-nest.js/1.0.1/canvas-nest.js" async></script>
+    src="https://cdn.staticfile.org/canvas-nest.js/1.0.1/canvas-nest.min.js" async></script>
+  <!-- 渲染动画 -->
+  <script src="https://cdn.staticfile.org/scrollReveal.js/4.0.5/scrollreveal.min.js"></script>
+  <script>
+    window.onload = function () {
+      // 加载成功就进行设置
+      if (window.ScrollReveal) {
+        // 实例化，根据默认配置改即可：https://scrollrevealjs.org/api/defaults.html
+        window.ScrollReveal({
+          // easing: "ease", // 动画效果
+          origin: "right", // 从右边出现
+          duration: "1500", // 持续时间1.5s
+          reset: true // 循环
+        }).reveal(".bloglist li,#header,#banner,.bg_white");
+        // 经测试，支持CSS选择器
+      }
+    }
+  </script>
+
 </body>
 
 </html>

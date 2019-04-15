@@ -696,6 +696,7 @@ main {
   color: #096;
 }
 
+/* 阅读更多 */
 .bloginfo .viewmore {
   display: block;
   padding: 5px 10px;
@@ -703,7 +704,6 @@ main {
   background: #12b7de;
   border-radius: 5px;
 }
-
 
 /* ==================响应式布局================== */
 /* 屏幕小于1024px使用如下CSS（iPad Pro） */
