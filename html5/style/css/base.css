@@ -23,7 +23,8 @@ a:focus {
 }
 
 /* 去除i的默认倾斜样式 */
-i {
+i,
+em {
   font-style: normal;
 }
 
@@ -583,7 +584,7 @@ main {
 }
 
 /* 置顶用红色字 */
-.blogtitle b {
+.blogtitle strong {
   color: #F00
 }
 
