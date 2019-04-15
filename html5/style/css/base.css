@@ -765,8 +765,10 @@ footer.clearfix {
 
 .copyright ul {
   float: left;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0 20px;
+  /* 方便子类脱离的动画效果 */
+  transform-style: preserve-3d;
 }
 
 .copyright ul li {
@@ -778,6 +780,13 @@ footer.clearfix {
 /* 约束一下二维码 */
 .copyright img {
   max-height: 100px;
+  /* 设置初始值 */
+  transform: perspective(700px) translateZ(0);
+  transition: all 500ms ease;
+}
+
+.copyright img:hover {
+  transform: perspective(700px) translateZ(100px);
 }
 
 /* 加粗声明 */
