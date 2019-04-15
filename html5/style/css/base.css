@@ -421,6 +421,81 @@ main {
 }
 
 /* ======侧边栏相关====== */
+
+/* 标签云|文章分类 */
+.cloud div {
+  /* 父类加了这个，子类就可以跳出（显示效果好点） */
+  transform-style: preserve-3d;
+}
+
+.cloud div a {
+  /* float: left; */
+  display: inline-block;
+  /* height: 24px; */
+  line-height: 24px;
+  padding: 3px 10px;
+  margin: 10px 5px 0 0;
+  border-radius: 3px;
+  color: #FFF;
+  /* 默认背景 */
+  background: #999;
+  /* 设置初始值（解决边角小bug） */
+  transform: perspective(700px) translateZ(0);
+  transition: all 500ms ease;
+}
+
+/* 特效 */
+.cloud div a:hover {
+  border-radius: 0;
+  /* 让字显示的更清晰 */
+  text-shadow: #000 1px 1px 1px;
+  /* 迎面扑来的效果 */
+  transform: perspective(700px) translateZ(100px);
+}
+
+/* 颜色循环系列 */
+.cloud div a:nth-child(8n-7) {
+  background: #83AF9B;
+}
+
+.cloud div a:nth-child(8n-6) {
+  background: #FE4365;
+}
+
+.cloud div a:nth-child(8n-5) {
+  background: #f16b17;
+}
+
+.cloud div a:nth-child(8n-4) {
+  background: #2AB8AD;
+}
+
+.cloud div a:nth-child(8n-3) {
+  background: #FC9D9A;
+}
+
+.cloud div a:nth-child(8n-2) {
+  background: #E2C52E;
+}
+
+.cloud div a:nth-child(8n-1) {
+  background: #8A9B0F;
+}
+
+.cloud div a:nth-child(8n) {
+  background: #036564;
+}
+
+/* 第一个特殊色 */
+.cloud div a:first-child {
+  background: #000000ba;
+}
+
+/* 最后一个特殊色 */
+.cloud div a:last-child {
+  background: #3299BB;
+}
+
 /*侧边栏相关文章的第一个图片文章*/
 .topnew {
   display: block;
@@ -477,80 +552,6 @@ main {
 
 .aside_list ul li:nth-child(8) i::before {
   content: "8";
-}
-
-/* ======标签云====== */
-.cloud div {
-  /* 父类加了这个，子类就可以跳出（显示效果好点） */
-  transform-style: preserve-3d;
-}
-
-.cloud div a {
-  /* float: left; */
-  display: inline-block;
-  /* height: 24px; */
-  line-height: 24px;
-  padding: 3px 10px;
-  margin: 10px 5px 0 0;
-  border-radius: 3px;
-  color: #FFF;
-  /* 默认背景 */
-  background: #999;
-  /* 设置初始值（解决边角小bug） */
-  transform: perspective(700px) translateZ(0);
-  transition: all 500ms ease;
-}
-
-/* 特效 */
-.cloud div a:hover {
-  border-radius: 0;
-  /* 让字显示的更清晰 */
-  text-shadow: #000 1px 1px 1px;
-  /* 迎面扑来的效果 */
-  transform: perspective(700px) translateZ(100px);
-}
-
-/* 颜色循环系列 */
-.cloud div a:nth-child(8n-7) {
-  background: #8A9B0F;
-}
-
-.cloud div a:nth-child(8n-6) {
-  background: #FE4365;
-}
-
-.cloud div a:nth-child(8n-5) {
-  background: #f16b17;
-}
-
-.cloud div a:nth-child(8n-4) {
-  background: #2AB8AD;
-}
-
-.cloud div a:nth-child(8n-3) {
-  background: #FC9D9A;
-}
-
-.cloud div a:nth-child(8n-2) {
-  background: #E2C52E;
-}
-
-.cloud div a:nth-child(8n-1) {
-  background: #83AF9B;
-}
-
-.cloud div a:nth-child(8n) {
-  background: #036564;
-}
-
-/* 第一个特殊色 */
-.cloud div a:first-child {
-  background: #000000ba;
-}
-
-/* 最后一个特殊色 */
-.cloud div a:last-child {
-  background: #3299BB;
 }
 
 /* ======友情链接====== */
