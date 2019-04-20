@@ -28,7 +28,7 @@ address {
 img {
     border: 0;
     /* 解决黑边框问题 */
-    /* display: block; */
+    display: block;
 }
 
 /* 显示隐藏的元素 */
@@ -104,6 +104,17 @@ img {
 }
 
 /* ==================网站公用样式================== */
+.bg_white {
+    background-color: #fff;
+    /* 4px */
+    padding: .2rem;
+    /* 8px; */
+    margin: .4rem auto;
+    /* 6px */
+    border-radius: .3rem;
+    overflow: hidden;
+}
+
 /* 有时候手机端底部导航有点问题，需要外部一个绝对定位的包裹容器 */
 /* PS：淘宝也是这么干的 */
 .container {
@@ -141,8 +152,7 @@ img {
     left: .75rem;
 }
 
-/* 消息图标 */
-/* #header .icon-msg { */
+/* 搜索图标 */
 #header a:last-child {
     position: absolute;
     /* 12px */
@@ -161,6 +171,92 @@ img {
     margin: .65rem auto;
     background: url(../../images/logo.gif) no-repeat center;
     background-size: contain;
+}
+
+/* ======主体====== */
+main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* 50px */
+    top: 2.5rem;
+    bottom: 2.5rem;
+    /* x轴多余部分隐藏 */
+    overflow-x: hidden;
+    /* y轴可以出现滚动条 */
+    overflow-y: auto;
+}
+
+/* ======banner====== */
+.banner {
+    text-align: center;
+    vertical-align: middle;
+    /* 200px */
+    max-height: 10rem;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%;
+}
+/* ======菜单====== */
+main nav li {
+    float: left;
+    width: 33%;
+    text-align: center;
+    /* 10px */
+    padding: .5rem 0;
+}
+
+/* 图标和字体两行显示 */
+main nav span {
+    display: block;
+}
+
+/* 底部字体小一点 */
+main nav .text {
+    /* 10px */
+    font-size: .5rem;
+}
+
+/* 图标大小 */
+main nav span.iconfont {
+    /* 30px; */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* 新闻 */
+main li:nth-child(1) span.iconfont {
+    color: #1a8236;
+}
+
+/* 专业 */
+main li:nth-child(2) span.iconfont {
+    color: #ea5c09;
+    /* 这个图标以及很粗了 */
+    font-weight: normal;
+}
+
+/* 居家 */
+main li:nth-child(3) span.iconfont {
+    color: #ec617a;
+}
+
+/* 国学 */
+main li:nth-child(4) span.iconfont {
+    color: black;
+}
+
+/* 资源 */
+main li:nth-child(5) span.iconfont {
+    color: #0493e6;
+    /* 这个图标以及很粗了 */
+    font-weight: normal;
+}
+
+/* 实验 */
+main li:nth-child(6) span.iconfont {
+    color: #8e23c3ba;
 }
 
 /* ======底部====== */
@@ -198,79 +294,4 @@ img {
 /* 底部字体小一点 */
 #footer .text {
     font-size: .5rem;
-}
-
-/* ======主体====== */
-main {
-    position: absolute;
-    left: 0;
-    right: 0;
-    /* 50px */
-    top: 2.5rem;
-    bottom: 2.5rem;
-    /* x轴多余部分隐藏 */
-    overflow-x: hidden;
-    /* y轴可以出现滚动条 */
-    overflow-y: auto;
-}
-
-main nav li {
-    float: left;
-    width: 30%;
-    line-height: 1rem;
-    text-align: center;
-    /* 8px */
-    padding-top: .4rem;
-}
-
-/* 底部字体小一点 */
-main nav .text {
-    /* 10px */
-    font-size: .5rem;
-}
-
-/* 图标和字体两行显示 */
-main nav span {
-    display: block;
-}
-
-/* 图标大小 */
-main nav span.iconfont {
-    /* 25px; */
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-/* 新闻 */
-main li:nth-child(1) span.iconfont {
-    color: #1a8236;
-}
-
-/* 专业 */
-main li:nth-child(2) span.iconfont {
-    color: #ea5c09;
-    /* 这个图标以及很粗了 */
-    font-weight: normal;
-}
-
-/* 居家 */
-main li:nth-child(3) span.iconfont {
-    color: #ec617a;
-}
-
-/* 国学 */
-main li:nth-child(4) span.iconfont {
-    color: black;
-}
-
-/* 资源 */
-main li:nth-child(5) span.iconfont {
-    color: #0493e6;
-    /* 这个图标以及很粗了 */
-    font-weight: normal;
-}
-
-/* 实验 */
-main li:nth-child(6) span.iconfont {
-    color: #8e23c3ba;
 }
