@@ -219,8 +219,8 @@ main nav li {
     width: 30%;
     line-height: 1rem;
     text-align: center;
-    /* 3px */
-    padding-top: .15rem;
+    /* 8px */
+    padding-top: .4rem;
 }
 
 /* 底部字体小一点 */
