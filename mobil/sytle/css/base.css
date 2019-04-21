@@ -469,7 +469,7 @@ main li:nth-child(6) span.iconfont {
     bottom: 0;
 }
 
-/* 时间距离头像留白 */
+/* 作者和时间距离头像留白 */
 .bloginfo time,
 .bloginfo span:nth-of-type(1) {
     /* 6px */
@@ -532,7 +532,7 @@ main li:nth-child(6) span.iconfont {
 @media screen and (max-width: 414px) {
 
     /* 隐藏作者姓名(看头像就ok了) */
-    .bloginfo div span:nth-of-type(1) {
+    .bloginfo span:nth-of-type(1) {
         display: none;
     }
 }
