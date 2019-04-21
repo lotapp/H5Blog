@@ -191,8 +191,6 @@ main {
 .banner {
     text-align: center;
     vertical-align: middle;
-    /* 200px */
-    max-height: 10rem;
     overflow: hidden;
 }
 .banner img{
