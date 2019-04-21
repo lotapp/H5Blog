@@ -110,8 +110,8 @@ img {
     padding: .2rem;
     /* 8px; */
     margin: .4rem auto;
-    /* 6px */
-    border-radius: .3rem;
+    /* 4px */
+    border-radius: .2rem;
     overflow: hidden;
 }
 
@@ -193,9 +193,11 @@ main {
     vertical-align: middle;
     overflow: hidden;
 }
-.banner img{
+
+.banner img {
     width: 100%;
 }
+
 /* ======菜单====== */
 main nav li {
     float: left;
@@ -225,7 +227,7 @@ main nav span.iconfont {
 
 /* 新闻 */
 main li:nth-child(1) span.iconfont {
-    color: #1a8236;
+    color: #ec617a;
 }
 
 /* 专业 */
@@ -235,14 +237,14 @@ main li:nth-child(2) span.iconfont {
     font-weight: normal;
 }
 
-/* 居家 */
+/* 生活 */
 main li:nth-child(3) span.iconfont {
-    color: #ec617a;
+    color: #8a9b0f;
 }
 
 /* 国学 */
 main li:nth-child(4) span.iconfont {
-    color: black;
+    color: #1a8236;
 }
 
 /* 资源 */
@@ -255,6 +257,39 @@ main li:nth-child(5) span.iconfont {
 /* 实验 */
 main li:nth-child(6) span.iconfont {
     color: #8e23c3ba;
+}
+
+/* ======文章列表====== */
+.htitle {
+    /* 14px */
+    font-size: .7rem;
+    /* 30px */
+    line-height: 1.5rem;
+    /* 1px */
+    border-bottom: .05rem solid #eee;
+    color: #484848;
+    font-weight: bold;
+    position: relative;
+    /* 10px */
+    margin-bottom: .5rem
+}
+/* 生成一个下划线 */
+.htitle::after {
+    content: '';
+    /* 54px */
+    width: 2.7rem;
+    /* 2px */
+    height: .1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    transition: all 500ms ease;
+}
+/* 下划线延长 */
+.htitle:hover:after {
+    /* 66px */
+    width: 3.3rem;
 }
 
 /* ======底部====== */
