@@ -1,0 +1,322 @@
+
+/* ======banner====== */
+
+.banner {
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.banner image {
+  width: 100%;
+}
+
+/* ======菜单====== */
+
+#main .nav li {
+  float: left;
+  width: 33%;
+  text-align: center;
+  /* 10px */
+  padding: 0.5rem 0;
+}
+
+/* 底部字体小一点 */
+
+#main .nav .text {
+  /* 14px */
+  font-size: 0.7rem;
+}
+
+/* 图标大小 */
+
+#main .nav view.iconfont {
+  /* 30px; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* 加个过渡动画 */
+  transition: all 1s ease;
+}
+
+/* 菜单图标添加hover动画 */
+
+#main .nav view:hover {
+  color: black !important;
+}
+
+/* 新闻 */
+
+#main li:nth-child(1) view.iconfont {
+  color: #ec617a;
+}
+
+/* 专业 */
+
+#main li:nth-child(2) view.iconfont {
+  color: #ea5c09;
+  /* 这个图标以及很粗了 */
+  font-weight: normal;
+}
+
+/* 生活 */
+
+#main li:nth-child(3) view.iconfont {
+  color: #8a9b0f;
+}
+
+/* 国学 */
+
+#main li:nth-child(4) view.iconfont {
+  color: #1a8236;
+}
+
+/* 资源 */
+
+#main li:nth-child(5) view.iconfont {
+  color: #0493e6;
+  /* 这个图标以及很粗了 */
+  font-weight: normal;
+}
+
+/* 实验 */
+
+#main li:nth-child(6) view.iconfont {
+  color: #b04be2;
+}
+
+/* ======文章列表====== */
+
+.htitle {
+  /* 16px */
+  font-size: 0.8rem;
+  /* 40px */
+  line-height: 2rem;
+  /* 1px */
+  border-bottom: 0.05rem solid #eee;
+  color: #484848;
+  position: relative;
+  /* 10px */
+  padding-left: 0.5rem;
+}
+
+/* 生成一个下划线 */
+
+.htitle::after {
+  content: '';
+  /* 60px */
+  width: 3rem;
+  /* 1px */
+  height: 0.05rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  margin-left: 0.5rem;
+  transition: all 500ms ease;
+}
+
+/* 下划线延长 */
+
+.htitle:hover:after {
+  /* 66px */
+  width: 3.3rem;
+}
+
+.bloglist {
+  /* 14px */
+  padding: 0.7rem;
+}
+
+/* 最后一篇文章底部留白 */
+
+.bloglist ul {
+  /* 10px */
+  padding-bottom: 0.5rem;
+}
+
+/* 文章列表的每一项 */
+
+.bloglist li {
+  overflow: hidden;
+  /* 120px */
+  min-height: 6rem;
+  /* 15px */
+  padding: 0.75rem;
+  /* 1px */
+  border-bottom: #eee 0.05rem dashed;
+  position: relative;
+}
+
+/* 文章标题 */
+
+.blogtitle {
+  /* 6px */
+  margin: 0 0 0.3rem 0;
+  /* 16px */
+  font-size: 0.8rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+/* 置顶字眼 */
+
+.blogtitle strong {
+  color: red;
+}
+
+/* 设置过渡动画 */
+
+.blogtitle navigator {
+  /* 转换为行内元素 */
+  display: inline;
+  transition: all 500ms ease;
+}
+
+/* hover动画 */
+
+.blogtitle navigator:hover {
+  color: #337ab7;
+  /* 10px */
+  padding-left: 0.5rem;
+}
+
+/* 展图 */
+
+.blogpic {
+  width: 100%;
+  /* 20px */
+  margin-right: 1rem;
+  display: block;
+  overflow: hidden;
+  /* 5px */
+  border-radius: 0.25rem;
+  position: relative;
+}
+
+/* 展图上的分类 */
+
+.blogpic i {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  font-style: normal;
+  /* 3px 5px */
+  padding: 0.15rem 0.25rem;
+  background: rgba(18, 182, 221, 0.8);
+  /* 14px */
+  font-size: 0.7rem;
+}
+
+/* 展图文字颜色 */
+
+.blogpic i navigator {
+  color: #fff;
+}
+
+/* 文章简介 */
+
+.blogtext {
+  color: #666;
+  /* 8px */
+  margin-top: 0.4rem;
+  /* 24px */
+  line-height: 1.2rem;
+  /* 120px */
+  max-height: 6rem;
+  /* 16px */
+  font-size: 0.8rem;
+  overflow: hidden;
+}
+
+/* 作者信息 */
+
+.bloginfo {
+  color: #999;
+  /* 30px */
+  line-height: 1.5rem;
+  /* 16px */
+  font-size: 0.8rem;
+  /* 10px */
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+/* 信息 */
+
+.bloginfo view:first-child {
+  float: left;
+  /* 4px 和阅读更多基本对齐 */
+  padding-top: 0.2rem;
+}
+
+/* 阅读更多 */
+
+.bloginfo view:last-child {
+  float: right;
+}
+
+/* 头像 */
+
+.bloginfo i {
+  float: left;
+  /* 30px */
+  width: 1.5rem;
+  height: 1.5rem;
+  /* 变成圆 */
+  border-radius: 50%;
+  /* 2px */
+  padding: 0.1rem;
+  display: block;
+  position: relative;
+  /* 线性渐变 */
+  background: linear-gradient(to top right, rgba(0, 153, 255, 0.9), rgba(42, 228, 197, 0.7));
+}
+
+/* 头像也变成圆 */
+
+.bloginfo i image {
+  width: 100%;
+  border-radius: 50%;
+  /* justify-content:space-between; */
+}
+
+/* 添加一个认证标志 */
+
+.bloginfo i::after {
+  content: '';
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAtJJREFUWMPNWEFr1EAUDvgH9H8k7ipeRE+K4kGQIiJCF7148qYnjyIoHsTeBAWh9ShsWl26pdYNVlaQgnWtqAtStEWLVIvsVmsmyYzzZutkayaZl3QjCQyE5M2bb+Z98743YxgpH1azdrm2OUyq5iixTce1rTZ/70IT7/wb/AMbsDXyevxxc4gP1CC25blVk2Ea2EIf6DswIN5E+QCfdRMLIh6c2QRfmYEwdmoHdzKyXSAKYCPgOx0Yu7yTVK3pQYORoLhvGAMNhhPybV5gZONjaEGJMOW4MsqVSgpfHpzBcCp2N/1vMH+bcvcpt/bkIRb8aEeaWzuYki8lFqzMyv7EORNJCZGkF+eMbqyyfx/y/EK6FVi4KfsGn2eUNluSJ2TTOGf+8mQEkP/+Lh7Q1DFG/Q3Rj5KuWHU1wc2G1KYkOfBeXokAClbn0ICCr03Zz5u/migzQvuIXaokOp0+HgEEM3btsj5Uc5fDSXybR+y4UgXIPKYzVPKocTp5AE58+nutN4GAMPL4BCYFjBmihNAYqnjkta4n9/n0MOTcu9vYnOQYUMNol17BI3+5Hu/42fkwvJ1F5o7vQaYHq22IwkpnqOLRrxW17cQ+RteXejaUMvL0bAopMbsQsg7GWMUjt344Gqr2vXAVFx+klZEOKmSxPHpxaavDJyc5gb3e6vAJuI/2p8zoEDIEqWN59OF+n81uFqwt9IG9mEVoHUMU5JgOCh4BAAm4dSP8/sXJWI6Yo/rEmMAjCA+Q2K0fYdT7uSkP60puIYu2Ya106HhEZs8JJZehenUtY120KR06cdXq2vfXfe8tbmdlDVcDVX7oeBSGj8vDzFDmIi1ydsOevVT5qFeS3NnWmS1zCaviEe1+5PKwd7AlLLbIV/EIiD3wIh99DJo6yvylmmzem1v5HYMKd1As5FG6kJcNhbyOKeyFlepKDwQZCvLYKz3xr1TJcqX3B9KdR6Yd1V4RAAAAAElFTkSuQmCC) no-repeat;
+  /* 12px */
+  background-size: 0.6rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* 作者和时间距离头像留白 */
+
+.bloginfo time, .bloginfo span:nth-of-type(1) {
+  /* 6px */
+  padding-left: 0.3rem;
+}
+
+/* 分类字体颜色 */
+
+.bloginfo span navigator {
+  color: #096;
+  /* 转换成行内元素 */
+  display: inline;
+}
+
+.bloginfo .viewmore {
+  display: block;
+  /* 4px 6px */
+  padding: 0.2rem 0.3rem;
+  color: #fff;
+  background: #12b7de;
+  /* 5px */
+  border-radius: 0.25rem;
+}

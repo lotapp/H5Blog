@@ -1,0 +1,253 @@
+<view class="container">
+  <!-- 头部信息 -->
+  <view id="header" class="clearfix">
+    <!-- 菜单 -->
+    <navigator url="#" class="iconfont icon-saoyisao"></navigator>
+    <!-- Logo -->
+    <view class="logo"></view>
+    <!-- 搜索 -->
+    <navigator url="#" class="iconfont icon-search"></navigator>
+  </view>
+  <!-- 主体内容 -->
+  <view id="main">
+    <!-- 幻灯片 -->
+    <view class="banner">
+      <image src="https://github.lesschina.com/html5/mobil/images/banner/1.jpg" mode="widthFix"></image>
+    </view>
+    <!-- 分类导航 -->
+    <view class="nav bg_white">
+      <ul class="clearfix">
+        <li>
+          <navigator url="#">
+            <view class="iconfont icon-news"></view>
+            <view class="text">资 讯</view>
+          </navigator>
+        </li>
+        <li>
+          <navigator url="#">
+            <view class="iconfont icon-html5"></view>
+            <view class="text">专 业</view>
+          </navigator>
+        </li>
+        <li>
+          <navigator url="#">
+            <view class="iconfont icon-jujia"></view>
+            <view class="text">生 活</view>
+          </navigator>
+        </li>
+        <li>
+          <navigator url="#">
+            <view class="iconfont icon-guoxue"></view>
+            <view class="text">国 学</view>
+          </navigator>
+        </li>
+        <li>
+          <navigator url="#">
+            <view class="iconfont icon-yunpan"></view>
+            <view class="text">资 源</view>
+          </navigator>
+        </li>
+        <li>
+          <navigator url="#">
+            <view class="iconfont icon-shiyan"></view>
+            <view class="text">实 验</view>
+          </navigator>
+        </li>
+      </ul>
+    </view>
+    <!-- 文章列表 -->
+    <view class="bloglist bg_white">
+      <!-- 标题 -->
+      <h2 class="htitle">推荐文章</h2>
+      <!-- 文章 -->
+      <ul>
+        <!-- 以此为循环（每页15个） -->
+        <li class="clearfix">
+          <!-- 标题 -->
+          <h3 class="blogtitle two_dot_hide">
+            <!-- 置顶就显示这行 -->
+            <strong>【顶】</strong>
+            <navigator url="#">今天又看到一前端禁止调试的手段，分享下~</navigator>
+          </h3>
+          <!-- 显示发布文章时分配的展图 -->
+          <view class="blogpic imgscale">
+            <!-- 分类名称 -->
+            <i>
+              <navigator url="#">Web</navigator>
+            </i>
+            <navigator url="#" title="今天又看到一前端禁止调试的手段，分享下~">
+              <image src="https://github.lesschina.com/html5/mobil/images/dis/1.jpg" mode="widthFix"></image>
+            </navigator>
+          </view>
+          <!-- 简介部分 -->
+          <view class="blogtext three_dot_hide">
+            点评：这次屏蔽和上次不太一样，是通过正常函数来实现的。PS：这个网站的屏蔽方式在360浏览器下生效，谷歌浏览器并没有生效（me：版本 70.0.3538.110）
+          </view>
+          <!-- 作者、时间、分类 -->
+          <view class="bloginfo">
+            <view>
+              <i>
+                <image src="https://github.lesschina.com/html5/mobil/images/avatar.jpg" mode="widthFix"></image>
+              </i>
+              <span>逆天</span>
+              <time>2019-04-14</time>
+              <span>【
+                <navigator url="#" target="_blank">Web</navigator>】</span>
+            </view>
+            <view>
+              <navigator url="#" class="viewmore">阅读更多</navigator>
+            </view>
+          </view>
+        </li>
+        <li class="clearfix">
+          <!-- 标题 -->
+          <h3 class="blogtitle two_dot_hide">
+            <!-- 置顶就显示这行 -->
+            <strong>【顶】</strong>
+            <navigator url="#">超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~~</navigator>
+          </h3>
+          <!-- 显示发布文章时分配的展图 -->
+          <view class="blogpic imgscale">
+            <!-- 分类名称 -->
+            <i>
+              <navigator url="#">JavaScript</navigator>
+            </i>
+            <navigator url="#" title="今天又看到一前端禁止调试的手段，分享下~">
+              <image src="https://github.lesschina.com/html5/mobil/images/dis/2.jpg" mode="widthFix"></image>
+            </navigator>
+          </view>
+          <!-- 简介部分 -->
+          <view class="blogtext three_dot_hide">
+            超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，
+          </view>
+          <!-- 作者、时间、分类 -->
+          <view class="bloginfo">
+            <view>
+              <i>
+                <image src="https://github.lesschina.com/html5/mobil/images/avatar.jpg" mode="widthFix"></image>
+              </i>
+              <span>逆天</span>
+              <time>2019-04-14</time>
+              <span>【
+                <navigator url="#" target="_blank">JavaScript</navigator>】</span>
+            </view>
+            <view>
+              <navigator url="#" class="viewmore">阅读更多</navigator>
+            </view>
+          </view>
+        </li>
+        <li class="clearfix">
+          <!-- 标题 -->
+          <h3 class="blogtitle two_dot_hide">
+            <navigator url="#">今天又看到一前端禁止调试的手段，分享下~</navigator>
+          </h3>
+          <!-- 显示发布文章时分配的展图 -->
+          <view class="blogpic imgscale">
+            <!-- 分类名称 -->
+            <i>
+              <navigator url="#">Web</navigator>
+            </i>
+            <navigator url="#" title="今天又看到一前端禁止调试的手段，分享下~">
+              <image src="https://github.lesschina.com/html5/mobil/images/dis/3.jpg" mode="widthFix"></image>
+            </navigator>
+          </view>
+          <!-- 简介部分 -->
+          <view class="blogtext three_dot_hide">
+            点评：这次屏蔽和上次不太一样，是通过正常函数来实现的。PS：这个网站的屏蔽方式在360浏览器下生效，谷歌浏览器并没有生效（me：版本 70.0.3538.110）
+          </view>
+          <!-- 作者、时间、分类 -->
+          <view class="bloginfo">
+            <view>
+              <i>
+                <image src="https://github.lesschina.com/html5/mobil/images/avatar.jpg" mode="widthFix"></image>
+              </i>
+              <span>逆天</span>
+              <time>2019-04-14</time>
+              <span>【
+                <navigator url="#" target="_blank">Web</navigator>】</span>
+            </view>
+            <view>
+              <navigator url="#" class="viewmore">阅读更多</navigator>
+            </view>
+          </view>
+        </li>
+        <li class="clearfix">
+          <!-- 标题 -->
+          <h3 class="blogtitle two_dot_hide">
+            <navigator url="#">超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~超长标题测试~~</navigator>
+          </h3>
+          <!-- 显示发布文章时分配的展图 -->
+          <view class="blogpic imgscale">
+            <!-- 分类名称 -->
+            <i>
+              <navigator url="#">国学经典</navigator>
+            </i>
+            <navigator url="#" title="今天又看到一前端禁止调试的手段，分享下~">
+              <image src="https://github.lesschina.com/html5/mobil/images/dis/4.jpg" mode="widthFix"></image>
+            </navigator>
+          </view>
+          <!-- 简介部分 -->
+          <view class="blogtext three_dot_hide">
+            超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，超长内容测试，
+          </view>
+          <!-- 作者、时间、分类 -->
+          <view class="bloginfo">
+            <view>
+              <i>
+                <image src="https://github.lesschina.com/html5/mobil/images/avatar.jpg" mode="widthFix"></image>
+              </i>
+              <span>逆天</span>
+              <time>2019-04-14</time>
+              <span>【
+                <navigator url="#" target="_blank">国学经典</navigator>】</span>
+            </view>
+            <view>
+              <navigator url="#" class="viewmore">阅读更多</navigator>
+            </view>
+          </view>
+        </li>
+      </ul>
+    </view>
+    <!-- 版权 -->
+    <view id="address">
+      <view class="copyright">Copyright © 2019
+        <navigator url="#">dunitian</navigator> All Rights Reserved.
+      </view>
+    </view>
+  </view>
+  <!-- 尾部导航 -->
+  <view id="footer">
+    <ul>
+      <li>
+        <navigator url="/">
+          <span class="iconfont icon-home"></span>
+          <span class="text">首 页</span>
+        </navigator>
+      </li>
+      <li>
+        <navigator url="#">
+          <span class="iconfont icon-html"></span>
+          <span class="text">专 业</span>
+        </navigator>
+      </li>
+      <li>
+        <navigator url="#">
+          <span class="iconfont icon-show"></span>
+          <span class="text">资 源</span>
+        </navigator>
+      </li>
+      <!-- <li>
+                    <navigator url="#">
+                        <span class="iconfont icon-guoxue"></span>
+                        <span class="text">国 学</span>
+                    </navigator>
+                </li> -->
+      <li>
+        <navigator url="#">
+          <span class="iconfont icon-me"></span>
+          <span class="text">我 的</span>
+        </navigator>
+      </li>
+    </ul>
+  </view>
+</view>
